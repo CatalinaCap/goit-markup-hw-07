@@ -13,7 +13,7 @@
 
 /*Index html style*/
 /*Header logo*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .header_nav {
     display: none;
   }
@@ -25,7 +25,7 @@
   display: block;
 }
 
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .js-mobile_btn {
     display: flex;
     justify-content: center;
@@ -35,62 +35,63 @@
     width: 100%;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 429px) and (max-width: 1400px) {
   .js-open-menu {
     visibility: hidden;
   }
 }
 
-@media screen and (min-width: 428px) (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .js-menu-container .is-open {
     position: absolute;
     top: 400px;
     right: -250px;
     background-color: var(--white);
-    max-width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     visibility: inherit;
     text-decoration: none;
-    max-width: 100%;
   }
 }
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .js-menu-container {
     position: absolute;
     top: -25px;
     background-color: var(--white);
-    max-width: 100%;
-    right: 400px;
-    height: auto;
+    right: 61px;
   }
 }
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .js_social {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    gap: 48px;
     color: var(--gray);
-    position: absolute;
-    top: 500px;
+    margin-top: 170px;
   }
 }
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .js_social__link a {
     font-size: 14px;
-    color: var(--gray);
+    color: var(--blue);
     text-decoration: none;
   }
 }
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .js_svg_contact_header a {
-    font-size: 10px;
+    font-size: 34px;
     color: var(--gray);
     text-decoration: none;
+    padding-left: 10px;
+    margin-top: 50px;
   }
 }
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (max-width: 428px) {
+  .js_svg_contact_header {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 428px) {
   .js-close-menu {
     width: 20px;
     margin: 20px 0;
@@ -104,14 +105,18 @@
     top: 10px;
   }
 }
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .js-close-menu:hover {
     color: var(--blue);
   }
 }
-
-@media screen and (max-width: 768px) {
-  .js-mobile_link {
+@media screen and (max-width: 428px) {
+  .mobile_contact_heeader {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .js-mobile_link a {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -119,25 +124,23 @@
     font-family: var(--primary-font);
     font-size: 40px;
     visibility: inherit;
-    color: #757575;
+    color: var(--black);
     text-decoration: none;
+    margin-top: 50px;
   }
 }
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .contact_header {
     display: none;
   }
 }
 
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (max-width: 428px) {
   .js-open-menu {
     background-color: var(--white);
-    display: block;
     border: none;
-    display: flex;
     position: fixed;
-    right: 1100px;
-    top: 15px;
+    right: 1050px;
   }
 }
 .header__section {
@@ -160,16 +163,8 @@
   color: var(--light-black);
   position: relative;
 }
-@media screen and (min-width: 1158px) {
-  .header_navigation {
-    display: flex;
-    position: relative;
-    top: -45px;
-    left: 300px;
-    gap: 50px;
-  }
-}
-@media screen and (min-width: 769px) {
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .header_navigation {
     display: flex;
     position: relative;
@@ -477,11 +472,13 @@ p {
       ),
       url(../images/img-bg.jpg);
     background-size: contain;
+    height: auto;
+    max-width: 100%;
   }
 }
 
 .main_title {
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -491,9 +488,8 @@ p {
       rgba(47, 48, 58, 0.2)
     ),
     url(../images/img-bg.jpg);
-  background-size: cover;
-  height: 600px;
-  width: 1600px;
+  background-size: contain;
+  max-width: 100%;
   background-repeat: no-repeat;
   border-radius: 0%;
   background-position: 50% 50%;
@@ -533,9 +529,10 @@ h1 {
   text-align: center;
   font-family: var(--primary-font);
   font-weight: 900;
+  max-width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (max-width: 428px) {
   .details_paragraph {
     display: flex;
     flex-direction: column;
