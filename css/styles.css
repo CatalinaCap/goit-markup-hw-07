@@ -13,6 +13,17 @@
 
 /*Index html style*/
 /*Header logo*/
+@media screen and (min-width: 428px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 @media screen and (max-width: 428px) {
   .header_nav {
     display: none;
@@ -632,11 +643,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 428px) {
-  .container {
-    width: 480px;
-  }
-}
+
 .details_paragraph {
   display: flex;
   flex-direction: row;
