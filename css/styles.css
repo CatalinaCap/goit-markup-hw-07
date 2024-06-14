@@ -15,7 +15,7 @@
 /*Header logo*/
 
 .container {
-  max-width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
 }
 .content {
@@ -164,7 +164,6 @@
     flex-wrap: wrap;
     max-width: 100%;
     justify-content: center;
-    width: 450px;
     flex-direction: column;
   }
   .details_paragraph li {
@@ -178,8 +177,8 @@
     margin-left: 140px;
   }
   .shadow_cards {
-    width: 270px;
-    max-width: 100%;
+    margin-left: -70px;
+    max-width: 270px;
     display: flex;
     flex-direction: column;
   }
@@ -192,48 +191,89 @@
     max-width: 100%;
   }
   .customers_loyalty {
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 0;
+    flex-wrap: wrap;
+    max-width: 100%;
   }
+
   .brand_customers {
     margin: 10px;
-  }
-  .container_footer .footer_flex,
-  .footer_social_media,
-  .footer_subscription {
-    flex-direction: column;
     max-width: 100%;
-    align-items: flex-start;
-    height: 100%;
+  }
+  .container_footer {
+    flex-wrap: wrap;
+    max-width: 1600px;
     margin: 0 auto;
+    justify-content: center;
   }
   .footer_flex {
-    flex-direction: column;
+    margin-left: 130px;
   }
-
-  .footer_flex,
-  .footer_social_media,
+  .footer_social_media {
+    margin-bottom: 100px;
+  }
   .footer_subscription {
-    width: 100%;
-  }
-
-  .footer_flex {
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
   }
-
-  .footer_social_media ul {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .footer_subscription form {
-    width: 100%;
-  }
-
-  .footer_subscription form input {
+  .footer_subs_form {
+    flex-wrap: wrap;
     max-width: 100%;
+    margin-left: -50px;
+    margin-top: -250px;
+  }
+  .title_sub {
+    position: relative;
+    top: -250px;
+  }
+  .footer_subs_form_btn {
+    position: relative;
+    right: -70px;
+  }
+  .footer_subs_form__position {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1158px) {
+  .contact_header {
+    flex-direction: column;
+    position: absolute;
+    right: 30px;
+    top: 70px;
+  }
+  .svg_contact_header a {
+    margin-top: 30px;
+  }
+  .details_paragraph {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .information {
+    display: none;
+  }
+  .shadow_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team_last {
+    flex-wrap: wrap;
+  }
+  .last_part_index {
+    height: 100%;
+    max-width: 100%;
+  }
+  .customers_loyalty {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .container_footer {
+    height: 100%;
+    max-width: 100%;
+  }
+  .footer_social_media {
   }
 }
 .header_logo a {
@@ -735,13 +775,13 @@ h2 {
   margin-top: 186px;
   margin-bottom: 94px;
   max-width: 100%;
-
   padding-left: 15px;
 }
 
 .last_part_index {
   background-color: rgb(224, 224, 235);
-  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
 }
 .customers_loyalty {
   display: flex;
@@ -811,13 +851,13 @@ h2 {
 .footer_subs_form__input {
   border-radius: 4px;
   background-color: var(--footer-color);
-  width: 358px;
+  max-width: 100%;
   height: 50px;
   border: rgba(255, 255, 255, 0.3) solid 1px;
 }
 .footer_subs_form_btn {
   height: 50px;
-  width: 200px;
+  max-width: 200px;
   background-color: var(--footer-color);
   font-family: var(--primary-font);
   font-size: 16px;
@@ -829,7 +869,7 @@ h2 {
 .footer_subs_form_btn svg {
   position: relative;
   top: 8px;
-  left: 15px;
+  left: 5px;
 }
 .footer_subscription {
   position: relative;
