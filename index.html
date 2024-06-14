@@ -15,38 +15,50 @@
   </head>
   <!--Prima parte/antet-->
   <body class="container">
-    <header class="header__section">
-      <div class="header_logo">
-        <a href="#"
-          ><p class="index_logo"><span class="first_logo">Web</span>Studio</p>
-        </a>
-          </div>
-       <div class="js-mobile_btn">
-          <button type="button" class="menu-toggle js-open-menu" aria-expanded="false"
-				aria-controls="mobile-menu">
-         <svg
-          width="24"
-          height="24"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
+    <header class="content">
+      <div class="header_mobile">
+        <div class="header_logo-mobile">
+          <a href="#"
+            ><p class="index_logo-mobile">
+              <span class="first_logo">Web</span>Studio
+            </p>
+          </a>
+        </div>
+        <div class="js-mobile_btn">
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
           </button>
-         
-          <div class="header_nav">
-        <nav>
+        </div>
+      </div>
+      <section class="header_desk">
+        <div class="header_logo">
+          <a href="#"
+            ><p class="index_logo"><span class="first_logo">Web</span>Studio</p>
+          </a>
+        </div>
+        <div class="header_nav">
           <ul class="header_navigation">
             <li><a class="link_index active" href="index.html">Studio</a></li>
             <li><a class="link_index" href="portfolio.html">Portfolio</a></li>
             <li><a class="link_index" href="#">Contacts</a></li>
           </ul>
-        </nav>
         </div>
         <div class="contact_header">
           <div class="svg_contact_header">
@@ -70,10 +82,10 @@
             >
           </div>
         </div>
-      </div> </div>
+      </section>
     </header>
     <!--Titlul principal-->
-    <main>
+    <main class="content">
       <section class="main_title">
         <h1>
           EFFECTIVE SOLUTIONS FOR<br />
@@ -83,43 +95,38 @@
           Request our service
         </button>
       </section>
-      <div class="js-menu-container"><nav class="js_mobile_menu">
-         <button class="js-close-menu">X</button>
-        
+      <div class="js-menu-container">
+        <nav class="js_mobile_menu">
+          <button class="js-close-menu">X</button>
+
           <ul class="js-mobile_link">
-            <li><a class="mob_link_index active" href="index.html">Studio</a></li>
-            <li><a class="mob_link_index" href="portfolio.html">Portfolio</a></li>
+            <li>
+              <a class="mob_link_index active" href="index.html">Studio</a>
+            </li>
+            <li>
+              <a class="mob_link_index" href="portfolio.html">Portfolio</a>
+            </li>
             <li><a class="mob_link_index" href="#">Contacts</a></li>
           </ul>
         </nav>
-      
-        <div class="mobile_contact_header"><div class="js_svg_contact_header">
+
+        <div class="mobile_contact_header">
+          <div class="js_svg_contact_header">
             <a class="js_link_contact_phone" href="tel:+12127724150">
-              <svg class="header_phone" width="10" height="16">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-smartphone-opt"
-                />
-              </svg>
               <p>+1 212-772-4150</p></a
             >
           </div>
           <div class="js_svg_contact_header">
             <a class="js_link_contact" href="mailto:info@devstudio.com">
-              <svg class="header_envelope" width="16" height="12">
-                <use
-                  href="./images/icons.svg/symbol-defs.svg#icon-envelope-opt"
-                />
-              </svg>
               <p>info@devstudio.com</p>
             </a>
           </div>
-          
         </div>
-      <div class="js_social">
+        <div class="js_social">
           <div class="js_social__link">
             <a href="https://www.instagram.com/">Instagram</a>
           </div>
-            
+
           <div class="js_social__link">
             <a href="https://www.twitter.com/">Twitter</a>
           </div>
@@ -127,60 +134,52 @@
           <div class="js_social__link">
             <a href="https://www.facebook.com/">Facebook</a>
           </div>
-            
+
           <div class="js_social__link">
             <a href="https://www.linkedin.com/">Linkedin</a>
           </div>
         </div>
       </div>
-      <!-- <div class="icons">
-        <svg class="header_antena" width="270px" height="120px">
-          <use href="./images/icons.svg/symbol-defs.svg#icon-antena-opt" />
-        </svg>
-        <svg class="header_clock" width="270px" height="120px">
-          <use href="./images/icons.svg/symbol-defs.svg#icon-clock-opt" />
-        </svg>
-        <svg class="header_monitor" width="270px" height="120px">
-          <use href="./images/icons.svg/symbol-defs.svg#icon-monitor-opt" />
-        </svg>
-        <svg class="header_astronaut" width="270px" height="120px">
-          <use href="./images/icons.svg/symbol-defs.svg#icon-astronaut-opt" />
-        </svg>
-      </div>  -->
+
       <div class="section_div">
         <ul class="details_paragraph">
           <li class="p_section">
             <svg class="header_antena" width="270px" height="120px">
-          <use href="./images/icons.svg/symbol-defs.svg#icon-antena-opt" />
-        </svg>
-            <strong>ATTENTION TO DETAILS</strong>
+              <use href="./images/icons.svg/symbol-defs.svg#icon-antena-opt" />
+            </svg>
+            <h5>ATTENTION TO DETAILS</h5>
             <p class="paragraph">
               We go into all the details and processes<br />of your business to
               develop a<br />customized solution.
             </p>
           </li>
-          <li class="p_section"><svg class="header_clock" width="270px" height="120px">
-          <use href="./images/icons.svg/symbol-defs.svg#icon-clock-opt" />
-        </svg>
-            <strong> PUNCTUALITY</strong>
+          <li class="p_section">
+            <svg class="header_clock" width="270px" height="120px">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-clock-opt" />
+            </svg>
+            <h5>PUNCTUALITY</h5>
             <p class="paragraph">
               With us, you can feel safe and secure.<br />An important principle
               of the company:<br />respect your time and deadlines.
             </p>
           </li>
-          <li class="p_section"><svg class="header_monitor" width="270px" height="120px">
-          <use href="./images/icons.svg/symbol-defs.svg#icon-monitor-opt" />
-        </svg>
-            <strong>PLANNING</strong>
+          <li class="p_section">
+            <svg class="header_monitor" width="270px" height="120px">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-monitor-opt" />
+            </svg>
+            <h5>PLANNING</h5>
             <p class="paragraph">
               You will be able to observe and<br />participate in every phase of
               solution<br />development and implementation.
             </p>
           </li>
-          <li class="p_section"> <svg class="header_astronaut" width="270px" height="120px">
-          <use href="./images/icons.svg/symbol-defs.svg#icon-astronaut-opt" />
-        </svg>
-            <strong>MODERN TECHNOLOGIES</strong>
+          <li class="p_section">
+            <svg class="header_astronaut" width="270px" height="120px">
+              <use
+                href="./images/icons.svg/symbol-defs.svg#icon-astronaut-opt"
+              />
+            </svg>
+            <h5>MODERN TECHNOLOGIES</h5>
             <p class="paragraph">
               We use innovative tools to solve<br />assigned tasks. It's time to
               simplify work<br />processes.
@@ -189,7 +188,7 @@
         </ul>
       </div>
 
-      <!--What we do section with pictures-->
+      <!-- What we do section with pictures-->
       <section class="information">
         <h2 class="index_h2">What we do</h2>
         <div class="pictures_second_part">
@@ -206,9 +205,8 @@
             <p class="arrange">DESIGN SOLUTIONS</p>
           </div>
         </div>
-       
       </section>
-      <!--Team-->
+      <!--Team -->
       <section class="last_part_index">
         <h2>Our Team</h2>
         <ul class="team_last">
@@ -216,7 +214,8 @@
             <img
               src="./images/christopher-walker@x1.jpg"
               alt="Christopher Walker"
-              width="270" srcset="./images/christopher-walker@x1.jpg x1, ./images/christopher-walker@x2.jpg x2"
+              width="270"
+              srcset="./images/christopher-walker@x1.jpg x1, ./images/christopher-walker@x2.jpg x2"
             />
             <p class="team_member">Christopher Walker</p>
             <p class="member_profession">Product Designer</p>
@@ -252,7 +251,12 @@
             </div>
           </li>
           <li class="shadow_cards">
-            <img src="./images/kylie-evans@x1.jpg" alt="Kylie Evans" width="270" srcset="./images/kylie-evans@x1.jpg x1, ./images/kylie-evans@x2.jpg x2"/>
+            <img
+              src="./images/kylie-evans@x1.jpg"
+              alt="Kylie Evans"
+              width="270"
+              srcset="./images/kylie-evans@x1.jpg x1, ./images/kylie-evans@x2.jpg x2"
+            />
             <p class="team_member">Kylie Evans</p>
             <p class="member_profession">Frontend Developer</p>
             <div class="social_media">
@@ -287,7 +291,12 @@
             </div>
           </li>
           <li class="shadow_cards">
-            <img src="./images/ryan-harris@x1.jpg" alt="Ryan Harris" width="270" srcset="./images/ryan-harris@x1.jpg x1, ./images/ryan-harris@x2.jpg x2" />
+            <img
+              src="./images/ryan-harris@x1.jpg"
+              alt="Ryan Harris"
+              width="270"
+              srcset="./images/ryan-harris@x1.jpg x1, ./images/ryan-harris@x2.jpg x2"
+            />
             <p class="team_member">Ryan Harris</p>
             <p class="member_profession">Marketing</p>
             <div class="social_media">
@@ -322,7 +331,12 @@
             </div>
           </li>
           <li class="shadow_cards">
-            <img src="./images/tyler-moore@x1.jpg" alt="Tyler Moore" width="270" srcset="./images/tyler-moore@x1.jpg x1, ./images/tyler-moore@x2.jpg x2"/>
+            <img
+              src="./images/tyler-moore@x1.jpg"
+              alt="Tyler Moore"
+              width="270"
+              srcset="./images/tyler-moore@x1.jpg x1, ./images/tyler-moore@x2.jpg x2"
+            />
             <p class="team_member">Tyler Moore</p>
             <p class="member_profession">UI Designer</p>
             <div class="social_media">
@@ -358,6 +372,7 @@
           </li>
         </ul>
       </section>
+
       <section class="customers_end">
         <h2 class="end_index">Regular Customers</h2>
         <ul class="customers_loyalty">
@@ -475,12 +490,10 @@
         </form>
       </div>
     </footer>
+
     <div data-modal class="is-hidden">
       <div data-modal-content>
-        <button data-modal-close type="button">
-       
-          X
-        </button>
+        <button data-modal-close type="button">X</button>
         <h2 class="modal-title">
           Leave your information and we'll call you back
         </h2>
@@ -496,7 +509,7 @@
           </label>
           <label class="modal-form__position">
             Telephone
-            <input type="tel" name="userphone" class="modal-form__input" />
+            <input type="number" name="userphone" class="modal-form__input" />
             <svg width="12px" height="12px">
               <use
                 href="./images/icons.svg/symbol-defs.2.svg#icon-phone-black-18dp-1"
@@ -518,7 +531,7 @@
               name="mesaj"
               placeholder="Enter the text"
               class="modal-form__comments"
-              rows="5"
+              rows="3"
             ></textarea>
           </label>
           <label class="modal-form__position modal-form__checked"
@@ -543,6 +556,7 @@
         </form>
       </div>
     </div>
+
     <script src="./modal.js"></script>
     <script src="./mobile-menu.js"></script>
   </body>
