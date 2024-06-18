@@ -17,19 +17,50 @@
   <!--Header section-->
   <body class="container">
     <header class="header__section">
-      <div class="container__header">
+      <div class="header_mobile">
+        <div class="header_logo-mobile">
+          <a href="#"
+            ><p class="index_logo-mobile">
+              <span class="logo">Web</span>Studio
+            </p>
+          </a>
+        </div>
+        <div class="js-mobile_btn">
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="container__headerdesk">
         <a href="#"
           ><p class="header_logo"><span class="logo">Web</span>Studio</p>
         </a>
         <nav class="choose_section">
           <ul>
             <li><a class="link" href="index.html">Studio</a></li>
-            <li><a class="link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="link active" href="portfolio.html">Portfolio</a></li>
             <li><a class="link" href="#">Contacts</a></li>
           </ul>
         </nav>
         <div class="contact_header">
-          <div class="svg_contact_header">
+          <div class="psvg_contact_header">
             <svg class="header_envelope" width="16" height="12">
               <use
                 href="./images/icons.svg/symbol-defs.svg#icon-envelope-opt"
@@ -39,7 +70,7 @@
               >info@devstudio.com</a
             >
           </div>
-          <div class="svg_contact_header">
+          <div class="psvg_contact_header">
             <svg class="header_phone" width="10" height="16">
               <use
                 href="./images/icons.svg/symbol-defs.svg#icon-smartphone-opt"
@@ -56,6 +87,51 @@
       <button class="buttons" type="button">Apps</button>
       <button class="buttons" type="button">Design</button>
       <button class="buttons" type="button">Marketing</button>
+    </div>
+    <div class="js-menu-container">
+      <nav class="js_mobile_menu">
+        <button class="js-close-menu">X</button>
+
+        <ul class="js-mobile_link">
+          <li>
+            <a class="mob_link" href="index.html">Studio</a>
+          </li>
+          <li>
+            <a class="mob_link active" href="portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="mob_link" href="#">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile_contact_header">
+        <div class="js_svg_contact_header">
+          <a class="js_link_contact_phone" href="tel:+12127724150">
+            <p>+1 212-772-4150</p></a
+          >
+        </div>
+        <div class="js_svg_contact_header">
+          <a class="js_link_contact" href="mailto:info@devstudio.com">
+            <p>info@devstudio.com</p>
+          </a>
+        </div>
+      </div>
+      <div class="js_social">
+        <div class="js_social__link">
+          <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+
+        <div class="js_social__link">
+          <a href="https://www.twitter.com/">Twitter</a>
+        </div>
+
+        <div class="js_social__link">
+          <a href="https://www.facebook.com/">Facebook</a>
+        </div>
+
+        <div class="js_social__link">
+          <a href="https://www.linkedin.com/">Linkedin</a>
+        </div>
+      </div>
     </div>
     <div class="cards_flex">
       <ul class="categories">
@@ -270,5 +346,6 @@
         </form>
       </div>
     </footer>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
