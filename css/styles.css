@@ -240,7 +240,7 @@
     margin-top: 140px;
     display: flex;
     flex-direction: column;
-    margin-left: 130px;
+    margin-left: -130px;
   }
   .footer_subs_form {
     flex-wrap: wrap;
@@ -315,7 +315,7 @@
     margin-top: 140px;
     display: flex;
     flex-direction: column;
-    margin-left: 130px;
+    margin-right: 130px;
   }
   .footer_subs_form {
     flex-wrap: wrap;
