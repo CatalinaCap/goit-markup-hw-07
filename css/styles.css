@@ -24,8 +24,11 @@
   margin: 0 auto;
 }
 .section_div {
-  max-width: 100%;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .information {
@@ -36,6 +39,7 @@
 .customers_end {
   max-width: 100%;
   margin: 0 auto;
+  width: 1200px;
 }
 .container_footer {
   width: 1600px;
@@ -181,12 +185,14 @@
   }
   .details_paragraph {
     flex-wrap: wrap;
-    max-width: 768px;
+    max-width: 428px;
+    width: 100%;
     justify-content: center;
     flex-direction: column;
   }
-  .p_section {
-    max-width: 768px;
+  .p_section .paragraph {
+    max-width: 428px;
+    width: 100%;
   }
   .details_paragraph li {
     margin-left: 80px;
@@ -194,15 +200,18 @@
   .information {
     display: none;
   }
-  .team_last {
+  .team_index {
     flex-direction: column;
     width: 428px;
     max-width: 100%;
+    justify-content: center;
   }
   .shadow_cards {
-    max-width: 100%;
+    max-width: 428px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .shadow_cards img {
     max-width: 100%;
@@ -215,23 +224,27 @@
   }
 
   .customers_loyalty {
-    margin-top: 0;
     flex-wrap: wrap;
-    max-width: 100%;
+    max-width: 428px;
+    width: 100%;
+    margin-left: 50px;
   }
 
   .brand_customers {
     margin: 10px;
-    max-width: 100%;
+    max-width: 428px;
+    width: 100%;
   }
   .container_footer {
     flex-wrap: wrap;
-    width: 768px;
-    max-width: 100%;
+    max-width: 428px;
     margin: 0 auto;
     justify-content: center;
   }
-
+  .footer_flex .footer_social_media {
+    display: flex;
+    flex-direction: column;
+  }
   .footer_social_media {
     margin-bottom: 250px;
     margin-right: 70px;
@@ -241,7 +254,7 @@
   }
   .footer_subs_form {
     flex-wrap: wrap;
-    max-width: 100%;
+    max-width: 428px;
     margin-left: -80px;
     margin-top: -250px;
   }
@@ -252,12 +265,14 @@
   }
   .footer_subs_form_btn {
     position: relative;
-    right: -70px;
+    right: 160px;
+    top: 50px;
   }
   .footer_subs_form__position {
     margin-left: 30px;
   }
 }
+
 @media screen and (min-width: 769px) and (max-width: 1158px) {
   .contact_header {
     flex-direction: column;
@@ -270,17 +285,19 @@
   }
   .details_paragraph {
     flex-wrap: wrap;
-    justify-content: center;
+    max-width: 769px;
+    width: 100%;
   }
   .information {
     display: none;
   }
   .shadow_cards {
     max-width: 100%;
+    margin-left: 40px;
   }
-  .team_last {
+  .team_index {
     flex-wrap: wrap;
-    width: 768px;
+    max-width: 769px;
   }
   .last_part_index {
     max-width: 100%;
@@ -293,13 +310,13 @@
   .customers_loyalty {
     flex-wrap: wrap;
     margin-right: 60px;
+    justify-content: center;
   }
   .brand_customers {
     margin-bottom: 10px;
   }
   .container_footer {
     flex-wrap: wrap;
-    max-width: 1600px;
     margin: 0 auto;
     justify-content: center;
   }
@@ -724,7 +741,8 @@ h1 {
 
 .social_media {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
   margin-top: 16px;
 }
 .team_member {
@@ -823,20 +841,14 @@ h2 {
   top: -33px;
 }
 
-.team_last {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  margin-top: 186px;
-  margin-bottom: 94px;
-  max-width: 100%;
-  padding-left: 0px;
-}
-
-.last_part_index {
+.team_index {
   background-color: rgb(224, 224, 235);
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
 }
 .customers_loyalty {
   display: flex;
@@ -863,8 +875,9 @@ h2 {
 .container_footer {
   display: flex;
   flex-direction: row;
-  max-width: 100%;
+  max-width: 1600px;
   background-color: var(--footer-color);
+  width: 100%;
 }
 .footer_flex {
   display: flex;
