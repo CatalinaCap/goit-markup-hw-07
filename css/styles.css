@@ -24,15 +24,10 @@
   margin: 0 auto;
 }
 .section_div {
-  width: 1200px;
   max-width: 100%;
   margin: 0 auto;
 }
-.last_part_index {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
+
 .information {
   width: 1200px;
   max-width: 100%;
@@ -186,9 +181,12 @@
   }
   .details_paragraph {
     flex-wrap: wrap;
-    max-width: 100%;
+    max-width: 768px;
     justify-content: center;
     flex-direction: column;
+  }
+  .p_section {
+    max-width: 768px;
   }
   .details_paragraph li {
     margin-left: 80px;
@@ -215,9 +213,7 @@
     flex-direction: column;
     max-width: 100%;
   }
-  .customers_end {
-    max-width: 100%;
-  }
+
   .customers_loyalty {
     margin-top: 0;
     flex-wrap: wrap;
@@ -230,30 +226,29 @@
   }
   .container_footer {
     flex-wrap: wrap;
-    max-width: 1600px;
+    width: 768px;
+    max-width: 100%;
     margin: 0 auto;
     justify-content: center;
   }
 
   .footer_social_media {
-    margin-bottom: 100px;
-    margin-right: 130px;
+    margin-bottom: 250px;
+    margin-right: 70px;
   }
   .footer_subscription {
-    margin-top: 140px;
-    display: flex;
-    flex-direction: column;
-    margin-left: -130px;
+    left: 70px;
   }
   .footer_subs_form {
     flex-wrap: wrap;
     max-width: 100%;
-    margin-left: -50px;
+    margin-left: -80px;
     margin-top: -250px;
   }
   .title_sub {
     position: relative;
     top: -250px;
+    left: -60px;
   }
   .footer_subs_form_btn {
     position: relative;
@@ -288,7 +283,6 @@
     width: 768px;
   }
   .last_part_index {
-    height: 100%;
     max-width: 100%;
   }
 
@@ -783,6 +777,7 @@ h2 {
   margin-bottom: 94px;
   gap: 40px;
   padding-left: 0px;
+  margin-left: 30px;
 }
 .p_section {
   margin-left: 0px;
@@ -845,8 +840,8 @@ h2 {
 }
 .customers_loyalty {
   display: flex;
-  justify-content: space-between;
-  margin-top: 186px;
+  gap: 30px;
+  margin-top: 150px;
   margin-bottom: 94px;
 }
 .end_index {
@@ -937,7 +932,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: right;
-  right: -150px;
+  right: -200px;
 }
 
 .social_media a {
